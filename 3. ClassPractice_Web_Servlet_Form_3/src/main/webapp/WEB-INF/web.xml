@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+
+  <!-- Servlet Configuration Section -->
+  <servlet>
+    <description>Servlet for handling form parameters</description>
+    <display-name>Form</display-name>
+    <servlet-name>Form_Parameters</servlet-name> <!-- Unique servlet name -->
+    <servlet-class>Form_Parameters</servlet-class> <!-- Servlet class to be executed -->
+  </servlet>
+
+  <!-- Servlet Mapping Section -->
+  <servlet-mapping>
+    <servlet-name>Form_Parameters</servlet-name> <!-- Servlet name to map -->
+    <url-pattern>/Form_Servlet</url-pattern> <!-- URL pattern to access the servlet -->
+  </servlet-mapping>
+
+</web-app>

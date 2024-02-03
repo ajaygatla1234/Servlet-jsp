@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+
+  <!-- Display name for the web application -->
+  <display-name>First_Servlet_App</display-name>
+
+  <!-- Welcome file list specifies the order of files to be searched for as a welcome page -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+
+  <!-- Servlet configuration section -->
+  <servlet>
+    <description></description>
+    <!-- Display name for the servlet -->
+    <display-name>Hello_Servlet</display-name>
+    <!-- Servlet name used in the Java code -->
+    <servlet-name>Hello_Servlet</servlet-name>
+    <!-- Fully qualified class name for the servlet -->
+    <servlet-class>Hello_Servlet</servlet-class>
+  </servlet>
+
+  <!-- Servlet mapping section -->
+  <servlet-mapping>
+    <!-- Servlet name to be mapped -->
+    <servlet-name>Hello_Servlet</servlet-name>
+    <!-- URL pattern to access the servlet -->
+    <url-pattern>/Hello_Servlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>

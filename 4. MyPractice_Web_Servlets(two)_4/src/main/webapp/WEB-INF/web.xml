@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+
+    <!-- Servlet Configuration for AddServlet -->
+    <servlet>
+        <!-- Servlet Name -->
+        <servlet-name>abc</servlet-name>
+        <!-- Servlet Class -->
+        <servlet-class>com.gl.web.servlet.AddServlet</servlet-class>
+    </servlet>
+    
+    <!-- Servlet Mapping for AddServlet -->
+    <servlet-mapping>
+        <!-- Servlet Name to be mapped -->
+        <servlet-name>abc</servlet-name>
+        <!-- URL Pattern to access the servlet -->
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet Configuration for AddServlet_2 -->
+    <servlet>
+        <!-- Optional: Servlet Description -->
+        <description></description>
+        <!-- Display Name for the Servlet -->
+        <display-name>AddServlet_2</display-name>
+        <!-- Servlet Name -->
+        <servlet-name>AddServlet_2</servlet-name>
+        <!-- Servlet Class -->
+        <servlet-class>com.gl.web.servlet.AddServlet_2</servlet-class>
+    </servlet>
+    
+    <!-- Servlet Mapping for AddServlet_2 -->
+    <servlet-mapping>
+        <!-- Servlet Name to be mapped -->
+        <servlet-name>AddServlet_2</servlet-name>
+        <!-- URL Pattern to access the servlet -->
+        <url-pattern>/Add</url-pattern>
+    </servlet-mapping>
+
+</web-app>

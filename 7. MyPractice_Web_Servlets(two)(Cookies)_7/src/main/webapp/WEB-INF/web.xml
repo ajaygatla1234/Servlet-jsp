@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+
+  <!-- Servlet Configuration for AddServlet -->
+  <servlet>
+    <servlet-name>abc</servlet-name>
+    <servlet-class>com.gl.web.servlet.AddServlet</servlet-class>
+  </servlet>
+
+  <!-- Servlet Mapping for AddServlet -->
+  <servlet-mapping>
+    <servlet-name>abc</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+
+  <!-- Servlet Configuration for AddServlet_2 -->
+  <servlet>
+    <description></description>
+    <display-name>AddServlet_2</display-name>
+    <servlet-name>AddServlet_2</servlet-name>
+    <servlet-class>com.gl.web.servlet.AddServlet_2</servlet-class>
+  </servlet>
+
+  <!-- Servlet Mapping for AddServlet_2 -->
+  <servlet-mapping>
+    <servlet-name>AddServlet_2</servlet-name>
+    <url-pattern>/Add</url-pattern>
+  </servlet-mapping>
+
+</web-app>
