@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Root element for Java EE web application deployment descriptor -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+
+  <!-- Display name for the web application -->
+  <display-name>MyPractice_Web_Servlet_ServletContext_ServletConfig_8</display-name>
+
+  <!-- List of welcome files to be displayed when accessing the root URL -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Servlet configuration -->
+  <servlet>
+    <description></description>
+    <display-name>MyServlet</display-name>
+    <!-- Servlet name used for mapping and identification -->
+    <servlet-name>MyServlet</servlet-name>
+    <!-- Servlet class responsible for handling requests -->
+    <servlet-class>com.gl.servlet.MyServlet</servlet-class>
+    
+    <!-- Initialization parameters for the servlet -->
+    <init-param>
+      <param-name>MyName</param-name>
+      <param-value>Subbu</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>MyPhone</param-name>
+      <param-value>One+</param-value>
+    </init-param>
+  </servlet>
+  
+  <!-- Servlet mapping, associating the servlet with a URL pattern -->
+  <servlet-mapping>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>/MyServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Context parameters, global parameters for the entire web application -->
+  <context-param>
+    <param-name>MyName</param-name>
+    <param-value>Ajay</param-value>
+  </context-param>
+  
+  <context-param>
+    <param-name>MyPhone</param-name>
+    <param-value>1+</param-value>
+  </context-param>
+  
+</web-app>
